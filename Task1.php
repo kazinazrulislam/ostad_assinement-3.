@@ -1,15 +1,9 @@
 <?php
-
-function modifyText($text) {
-    $lowerText = strtolower($text);
-
-    $modifiedText = str_replace("brown", "red", $lowerText);
-
+function modifyText($Stext) {
+    $modifiedText = strtolower(str_replace("brown", "red", $Stext));
     echo $modifiedText;
 }
 
-$text = "The quick brown fox jumps over the lazy dog.";
-modifyText($text);
-
-
+$Stext = "The quick brown fox jumps over the lazy dog.";
+modifyText($Stext);
 ?>
